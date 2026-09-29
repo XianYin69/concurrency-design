@@ -1,0 +1,54 @@
+{
+  "dependencies": [
+    {
+      "name": "file_ops",
+      "type": "skill",
+      "source_url": "local://skill_manage_system",
+      "license": "unknown",
+      "version": "local",
+      "install": "sms:install skill_manage_system",
+      "checked_at": "2026-09-29T23:46",
+      "source_url_status": "verified"
+    },
+    {
+      "name": "code-guidelines",
+      "type": "skill",
+      "source_url": "local://code-guidelines",
+      "license": "unknown",
+      "version": "local",
+      "install": "sms:install code-guidelines",
+      "checked_at": "2026-09-29T23:46",
+      "source_url_status": "verified"
+    },
+    {
+      "name": "pavedpath-code",
+      "type": "skill",
+      "source_url": "local://pavedpath-code",
+      "license": "MIT",
+      "version": "local",
+      "install": "sms:install pavedpath-code",
+      "checked_at": "2026-09-29T23:46",
+      "source_url_status": "verified"
+    },
+    {
+      "name": "python",
+      "type": "software",
+      "source_url": "https://github.com/python/cpython",
+      "license": "PSF-2.0",
+      "version": "system",
+      "install": "system",
+      "checked_at": "2026-09-29T23:46",
+      "source_url_status": "verified"
+    },
+    {
+      "name": "git",
+      "type": "software",
+      "source_url": "https://github.com/git/git",
+      "license": "GPL-2.0",
+      "version": "system",
+      "install": "system",
+      "checked_at": "2026-09-29T23:46",
+      "source_url_status": "verified"
+    }
+  ]
+}

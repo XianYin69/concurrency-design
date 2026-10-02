@@ -1,12 +1,12 @@
 # scripts（脚本库）
 
-本目录存放可执行辅助脚本：校验、生成、检索、机制兜底。工具本身 ≤ 50 行，
+本目录存放可执行辅助脚本：校验、生成、检索、机制兜底。工具本身不限行数（50 行红线只约束 markdown），
 文件名英文、小写、下划线分隔。
 
 ## 通用机制
 
 - [`check_links.py`](check_links.py)：悬空链接校验（红线：悬空 = 0）。
-- [`lint_check.py`](lint_check.py)：体量与坏味道自查（≤50 行、裸 except、长行）。
+- [`lint_check.py`](lint_check.py)：体量与坏味道自查（.md ≤50 行；脚本不计行数，查裸 except、print 残留、长行）。
 - [`logic_chain.py`](logic_chain.py)：逻辑链 add/verify/debate（正反双链）。
 - [`process_chain.py`](process_chain.py)：过程链 save/load/interrupt/resume。
 - [`penalty.py`](penalty.py)：惩罚计数，达 10 次熔断。

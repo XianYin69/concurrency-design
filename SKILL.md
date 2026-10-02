@@ -37,7 +37,7 @@ scaffold_project / self_update / flowchart_helper + 领域：race_probe / deadlo
 ## 红线
 
 - 不得跳过初始化（含 MIT `LICENSE`，已有不覆盖）；不得静默写盘（默认 `--dry-run`）；不得删除 resistance/ 约束。
-- 悬空链接必须为 0；所有 .md / 脚本 ≤ 50 行；缓存文件不得写入 skill 目录（落用户缓存目录）。
+- 悬空链接必须为 0；所有 .md ≤ 50 行（50 行红线只约束 markdown 文本；脚本 .py/.ps1/.sh/.cmd 不限行数，但仍禁裸 except、print 调试残留、>100 字符长行、超长函数）；缓存文件不得写入 skill 目录（落用户缓存目录）。
 - 文件夹名=流程名；脚本英文名称；SKILL.md 必含 YAML frontmatter；agent/ 四格式提示词一句话。
 - 遇不明必派 file_ops 联网学习（见 [浏览器学习约束](resistance/浏览器学习约束/浏览器学习约束.md)），禁止臆造内存模型/库行为。
 - 共享可变状态必须有明确同步策略与可见性声明，见 [共享可变状态约束](resistance/共享可变状态约束/共享可变状态约束.md)。

@@ -7,7 +7,7 @@ def declared(path):
     return [(m.group(1), m.group(2), m.group(3))
             for m in (ROW.match(l) for l in open(path, encoding="utf-8")) if m]
 def sroot():
-    return os.path.join(os.path.expanduser("~"), ".kilocode", "skills")
+    return (os.environ.get("SMS_SKILLS") or os.path.join(os.environ.get("LOCALAPPDATA") or os.path.expanduser("~"), "SMS", "skills"))
 def ok_software(name):
     if name == "python":
         return bool(shutil.which("python") or shutil.which("python3"))

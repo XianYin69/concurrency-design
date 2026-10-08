@@ -1,7 +1,7 @@
 """browser_learn.py — 浏览器学习入口：派 file_ops（ff_lite.py search/fetch）取证，结论落 tmp 供蒸馏。"""
 import os, subprocess, sys, time
 def ff_lite():
-    r = os.path.join(os.path.expanduser("~"), ".kilocode", "skills",
+    r = os.path.join(os.environ.get("SMS_SKILLS") or os.path.join(os.environ.get("LOCALAPPDATA") or os.path.expanduser("~"), "SMS", "skills"),
                      "skill_manage_system", "skill", "sub_skills", "file_ops")
     for n in ("ff_lite.py", "ff_lite"):
         p = os.path.join(r, n)
